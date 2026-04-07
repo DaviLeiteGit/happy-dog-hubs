@@ -6,25 +6,21 @@ const services = [
     icon: Baby,
     title: "Filhotes",
     description: "Socialização e comandos básicos para filhotes a partir de 3 meses. A base para um cão equilibrado.",
-    price: "A partir de R$ 150",
   },
   {
     icon: Dog,
     title: "Obediência Básica",
     description: "Senta, deita, fica, junto e recall. Comandos essenciais para o dia a dia com seu cão.",
-    price: "A partir de R$ 200",
   },
   {
     icon: Shield,
     title: "Comportamental",
     description: "Tratamento de medos, agressividade, ansiedade de separação e outros problemas comportamentais.",
-    price: "A partir de R$ 250",
   },
   {
     icon: Users,
     title: "Aulas em Grupo",
     description: "Socialização e treinamento em grupo com até 5 cães. Ótimo para socialização e economia.",
-    price: "A partir de R$ 100",
   },
 ];
 
@@ -69,12 +65,9 @@ const Services = () => {
             >
               <service.icon className="w-10 h-10 text-primary group-hover:text-primary-foreground mb-5 transition-colors" />
               <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-              <p className="font-body text-muted-foreground group-hover:text-primary-foreground/80 mb-5 text-sm leading-relaxed transition-colors">
+              <p className="font-body text-muted-foreground group-hover:text-primary-foreground/80 text-sm leading-relaxed transition-colors">
                 {service.description}
               </p>
-              <span className="font-body font-semibold text-accent group-hover:text-primary-foreground transition-colors">
-                {service.price}
-              </span>
             </motion.div>
           ))}
         </div>
