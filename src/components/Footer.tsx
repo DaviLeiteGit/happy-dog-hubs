@@ -6,7 +6,7 @@ const Footer = () => {
           <a href="https://wa.me/5561982226596" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">WhatsApp</a>
           <a href="https://instagram.com/equilibriodogbsb" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">Instagram</a>
         </div>
-        <p>© 2026 CãoEducado. Todos os direitos reservados.</p>
+        <p>© 2026 EquilibrioDogBsb. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
