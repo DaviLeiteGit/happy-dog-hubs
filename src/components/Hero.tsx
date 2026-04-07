@@ -37,16 +37,20 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="#contato"
+              href="https://wa.me/5561982226596?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary text-primary-foreground font-body font-semibold text-lg hover:opacity-90 transition-opacity"
             >
-              Agende uma Avaliação
+              Agende pelo WhatsApp
             </a>
             <a
-              href="#servicos"
+              href="https://instagram.com/equilibriodogbsb"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 rounded-lg border-2 border-primary-foreground/30 text-primary-foreground font-body font-semibold text-lg hover:bg-primary-foreground/10 transition-colors backdrop-blur-sm"
             >
-              Conheça os Serviços
+              Siga no Instagram
             </a>
           </div>
         </motion.div>
