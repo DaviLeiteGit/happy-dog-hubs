@@ -5,7 +5,7 @@ const services = [
   {
     icon: Baby,
     title: "Filhotes",
-    description: "Socialização e comandos básicos para filhotes a partir de 3 meses. A base para um cão equilibrado.",
+    description: "Socialização e comandos básicos para filhotes a partir de 2 meses. A base para um cão equilibrado.",
   },
   {
     icon: Dog,
