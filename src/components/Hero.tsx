@@ -1,7 +1,37 @@
 import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-dog.jpg";
 
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+
 const Hero = () => {
+  const handleWhatsAppClick = (
+    e: React.MouseEvent<HTMLAnchorElement>
+  ) => {
+    e.preventDefault();
+
+    const url =
+      "https://wa.me/5561982226596?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
+
+    // Garante existência do dataLayer
+    window.dataLayer = window.dataLayer || [];
+
+    // Evento para GTM / Google Ads
+    window.dataLayer.push({
+      event: "whatsapp_click",
+      button_name: "hero_agende_whatsapp",
+      page: "home",
+    });
+
+    // Pequeno delay para garantir envio do evento
+    setTimeout(() => {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }, 300);
+  };
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
@@ -13,6 +43,7 @@ const Hero = () => {
           height={1080}
           className="w-full h-full object-cover"
         />
+
         <div className="absolute inset-0 bg-foreground/50" />
       </div>
 
@@ -26,24 +57,29 @@ const Hero = () => {
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary-foreground font-body text-sm font-medium mb-6 backdrop-blur-sm">
             🐾 Adestramento Profissional
           </span>
+
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight mb-6">
             Transforme a vida
             <br />
             <span className="italic">do seu cão</span>
           </h1>
+
           <p className="text-lg md:text-xl text-primary-foreground/80 font-body mb-10 max-w-lg leading-relaxed">
             Adestramento com técnicas modernas baseadas em reforço positivo.
             Resultados reais com respeito e carinho pelo seu melhor amigo.
           </p>
+
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="https://wa.me/5561982226596?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleWhatsAppClick}
               className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary text-primary-foreground font-body font-semibold text-lg hover:opacity-90 transition-opacity"
             >
               Agende pelo WhatsApp
             </a>
+
             <a
               href="https://instagram.com/equilibriodogbsb"
               target="_blank"
