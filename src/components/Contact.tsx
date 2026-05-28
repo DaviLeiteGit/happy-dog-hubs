@@ -8,7 +8,7 @@ const Contact = () => {
   const [dog, setDog] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleWhatsAppSubmit = () => {
+const handleWhatsAppSubmit = () => {
     const whatsappNumber = "5561982226596";
 
     const text = `Olá! Gostaria de agendar uma avaliação.
@@ -20,6 +20,13 @@ const Contact = () => {
 
     const encodedText = encodeURIComponent(text);
     const url = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: "form_whatsapp_submit",
+        form_name: "agendar_avaliacao"
+      });
+    }
 
     window.open(url, "_blank");
   };
