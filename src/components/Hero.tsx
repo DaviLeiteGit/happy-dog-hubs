@@ -14,7 +14,7 @@ const Hero = () => {
     e.preventDefault();
 
     const url =
-      "https://wa.me/5561982226596?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
+     "https://api.whatsapp.com/send?phone=5561982226596&text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
 
     // Garante existência do dataLayer
     window.dataLayer = window.dataLayer || [];
@@ -71,7 +71,7 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="https://wa.me/5561982226596?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+              href="https://api.whatsapp.com/send?phone=5561982226596&text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleWhatsAppClick}
