@@ -17,11 +17,11 @@ const services = [
     title: "Comportamental",
     description: "Tratamento de medos, agressividade, ansiedade de separação e outros problemas comportamentais.",
   },
-  {
-    icon: Users,
-    title: "Aulas em Grupo",
-    description: "Socialização e treinamento em grupo com até 5 cães. Ótimo para socialização e economia.",
-  },
+  // {
+  //   icon: Users,
+  //   title: "Aulas em Grupo",
+  //   description: "Socialização e treinamento em grupo com até 5 cães. Ótimo para socialização e economia.",
+  // },
 ];
 
 const fadeUp = {
