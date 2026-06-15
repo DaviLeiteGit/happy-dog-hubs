@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/favicon.png";
 
 const links = [
   { href: "#servicos", label: "Serviços" },
@@ -18,9 +19,9 @@ const Navbar = () => {
           className="inline-flex items-center gap-2 text-xl font-bold text-primary-foreground font-display"
         >
           <img
-            src="/favicon.ico"
+            src={logo}
             alt="Equilibrio Dog"
-             className="w-10 h-10 rounded-full object-cover"
+            className="w-10 h-10 rounded-full object-cover"
           />
           <span>EquilibrioDogBsb</span>
         </a>

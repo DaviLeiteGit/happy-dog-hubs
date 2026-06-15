@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-equilibrio.png";
+import logo from "@/assets/favicon.png";
 
 declare global {
   interface Window {
@@ -34,7 +35,7 @@ const Hero = () => {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 text-primary-foreground font-body text-sm font-medium mb-6 backdrop-blur-sm">
             <img
-              src="/favicon.ico"
+              src={logo}
               alt="Logo"
               className="w-5 h-5 rounded-full object-cover"
             />
