@@ -8,6 +8,7 @@ declare global {
     dataLayer: any[];
   }
 }
+//a
 const whatsappUrl =
   "https://wa.me/5561982226596?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20gratuita.";
 
