@@ -32,8 +32,13 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary-foreground font-body text-sm font-medium mb-6 backdrop-blur-sm">
-            🐾 Adestramento Profissional
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 text-primary-foreground font-body text-sm font-medium mb-6 backdrop-blur-sm">
+            <img
+              src="/favicon.png"
+              alt="Logo"
+              className="w-5 h-5 rounded-full object-cover"
+            />
+            <span>Adestramento Profissional</span>
           </span>
 
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight mb-6">

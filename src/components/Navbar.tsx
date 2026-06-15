@@ -13,8 +13,16 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-foreground/20 backdrop-blur-md border-b border-primary-foreground/10">
       <div className="container flex items-center justify-between h-16">
-        <a href="#" className="text-xl font-bold text-primary-foreground font-display">
-          🐾 EquilibrioDogBsb
+        <a
+          href="#"
+          className="inline-flex items-center gap-2 text-xl font-bold text-primary-foreground font-display"
+        >
+          <img
+            src="/favicon.png"
+            alt="Equilibrio Dog"
+             className="w-10 h-10 rounded-full object-cover"
+          />
+          <span>EquilibrioDogBsb</span>
         </a>
 
         {/* Desktop */}
