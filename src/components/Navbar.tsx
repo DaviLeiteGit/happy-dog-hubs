@@ -18,7 +18,7 @@ const Navbar = () => {
           className="inline-flex items-center gap-2 text-xl font-bold text-primary-foreground font-display"
         >
           <img
-            src="/favicon.png"
+            src="../favicon.png"
             alt="Equilibrio Dog"
              className="w-10 h-10 rounded-full object-cover"
           />
