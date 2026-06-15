@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
-import img1 from "@/assets/training-1.png.asset.json";
-import img2 from "@/assets/training-2.png.asset.json";
-import img3 from "@/assets/training-3.png.asset.json";
+import img1 from "@/assets/training-1.png";
+import img2 from "@/assets/training-2.png";
+import img3 from "@/assets/training-3.png";
 
 const gallery = [
-  { src: img1.url, alt: "Sessão de adestramento em parque de Brasília" },
-  { src: img2.url, alt: "Adestrador com border collie em passeio" },
-  { src: img3.url, alt: "Adestrador com três cães durante treino" },
+  { src: img1, alt: "Sessão de adestramento em parque de Brasília" },
+  { src: img2, alt: "Adestrador com border collie em passeio" },
+  { src: img3, alt: "Adestrador com três cães durante treino" },
 ];
 
 const whatsappUrl =
