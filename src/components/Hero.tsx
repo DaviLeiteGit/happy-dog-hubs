@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import heroAsset from "@/assets/hero-equilibrio.png.asset.json";
-
-const heroImg = heroAsset.url;
+import heroImg from "@/assets/hero-equilibrio.png";
 
 declare global {
   interface Window {
