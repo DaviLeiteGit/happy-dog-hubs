@@ -34,7 +34,7 @@ const Hero = () => {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 text-primary-foreground font-body text-sm font-medium mb-6 backdrop-blur-sm">
             <img
-              src="../favicon.png"
+              src="/favicon.ico"
               alt="Logo"
               className="w-5 h-5 rounded-full object-cover"
             />
