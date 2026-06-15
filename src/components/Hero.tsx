@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-equilibrio.png";
 import logo from "@/assets/logo.png";
+import { MessageCircle } from "lucide-react";
 
 declare global {
   interface Window {
     dataLayer: any[];
   }
 }
+const whatsappUrl =
+  "https://wa.me/5561982226596?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20gratuita.";
+
 
 const Hero = () => {
 
@@ -54,6 +58,16 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-body font-semibold text-lg hover:opacity-90 transition-opacity"
+            >
+              <MessageCircle className="w-5 h-5" />
+              Agendar avaliação gratuita
+            </a>
+
             <a
               href="https://instagram.com/equilibriodogbsb"
               target="_blank"

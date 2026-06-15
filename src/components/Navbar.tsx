@@ -23,7 +23,7 @@ const Navbar = () => {
             alt="Equilibrio Dog"
             className="w-10 h-10 rounded-full object-cover"
           />
-          <span>EquilibrioDogBsb</span>
+          <span className="text-2xl font-bold text-foreground">EquilibrioDogBsb</span>
         </a>
 
         {/* Desktop */}
