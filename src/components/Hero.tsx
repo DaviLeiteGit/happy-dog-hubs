@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-equilibrio.png";
-import logo from "@/assets/favicon.png";
+import logo from "@/assets/logo.png";
 
 declare global {
   interface Window {
