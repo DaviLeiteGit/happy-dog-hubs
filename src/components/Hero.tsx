@@ -15,13 +15,13 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
         <img
           src={heroImg}
           alt="Adestrador profissional treinando um cão em um parque"
           width={1920}
           height={1080}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[center_25%] scale-110"
         />
 
         <div className="absolute inset-0 bg-foreground/50" />
