@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import heroImg from "@/assets/hero-dog.jpg";
+import heroAsset from "@/assets/hero-equilibrio.png.asset.json";
+
+const heroImg = heroAsset.url;
 
 declare global {
   interface Window {
@@ -70,16 +72,6 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://api.whatsapp.com/send?phone=5561982226596&text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={handleWhatsAppClick}
-              className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary text-primary-foreground font-body font-semibold text-lg hover:opacity-90 transition-opacity"
-            >
-              Agende pelo WhatsApp
-            </a>
-
             <a
               href="https://instagram.com/equilibriodogbsb"
               target="_blank"
